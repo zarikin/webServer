@@ -20,3 +20,18 @@ go to /etc/php/apache2/php.ini and change :
 display_errors = Off      by    display_errors = On
 display_startup_errors = Off       by      display_startup_errors = On
 ```
+
+## To generate QR code
+```
+sudo apt-get install php-gd
+service apache2 restart
+```
+Download : [PHP QR code](https://sourceforge.net/projects/phpqrcode/files/)
+
+Unzip and place the folder in the same directory than the .php files.
+Then to generate, in the php file :
+```
+include "phpqrcode/qrlib.php";
+QRcode::png('Bonsoir', 'test.png'); //generate qr code
+echo "<img src='test.png'/>"; //to display image
+```
