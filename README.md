@@ -10,7 +10,7 @@ sudo chmod 777 -R *
 ```
 After that, we can change the index.html that is in the html folder to index.php and start to code php in the file. Be careful to put the tags:
 ```
-<? Php
+<?php
 echo "here your code";
 ?>
 ```
