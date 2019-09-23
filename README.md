@@ -3,7 +3,7 @@
 ### install
 ```
 sudo apt install -y apache2
-sudo apt-get install php libapache2-mod-php
+sudo apt-get install -y php libapache2-mod-php
 service apache2 start
 cd /var/www
 sudo chmod 777 -R *
