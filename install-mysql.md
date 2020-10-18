@@ -17,6 +17,6 @@ sudo systemctl start mysql
 ```
 - retirer le mot de passe root
     - Open & Edit ```/etc/mysql/mysql.conf.d/mysqld.cnf```
-    - Add skip-grant-tables under [mysqld]
+    - Add ```skip-grant-tables``` under [mysqld]
     - rédémarrer Mysql
     - se connecter avec ``` mysql -u root -p ```
