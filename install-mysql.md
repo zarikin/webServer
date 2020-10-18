@@ -13,10 +13,16 @@ sudo systemctl start mysql
 ```	
 - donner privilèges :
 ```
-	grant all privileges on *.* to bill@localhost identified by 'pass' with grant option;
+	grant all privileges on *.* to non-root@localhost identified by 'password' with grant option;
 ```
 - retirer le mot de passe root
     - Open & Edit ```/etc/mysql/mysql.conf.d/mysqld.cnf```
     - Add ```skip-grant-tables``` under [mysqld]
     - rédémarrer Mysql
     - se connecter avec ``` mysql -u root -p ```
+
+- créer une database :
+```
+CREATE DATABASE databasename;
+USE databasename;
+```
