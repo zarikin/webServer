@@ -20,6 +20,17 @@ sudo systemctl start mysql
     - Add ```skip-grant-tables``` under [mysqld]
     - rédémarrer Mysql
     - se connecter avec ``` mysql -u root -p ```
+    - faire les commandes suivantes : 
+    ```sql
+    use mysql; # use mysql table
+    update user set authentication_string=PASSWORD("") where User='root'; # update password to nothing
+    update user set plugin="mysql_native_password" where User='root'; # set password resolving to default mechanism for root user
+    flush privileges;
+    quit;
+    ```
+    - ```sudo systemctl restart mysql```
+    - se connecter avec ```mysql -u root -p```
+    
 
 - créer une database :
 ```
