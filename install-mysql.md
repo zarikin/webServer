@@ -8,11 +8,11 @@ sudo systemctl start mysql
 	mysql -u root -p
 ```
 - créer un utilisateur : 
-```
+```sql
 	CREATE USER 'non-root'@'localhost' IDENTIFIED BY 'password';
 ```	
 - donner privilèges :
-```
+```sql
 	grant all privileges on *.* to non-root@localhost identified by 'password' with grant option;
 ```
 - retirer le mot de passe root
@@ -33,7 +33,7 @@ sudo systemctl start mysql
     
 
 - créer une database :
-```
+```sql
 CREATE DATABASE databasename;
 USE databasename;
 ```
