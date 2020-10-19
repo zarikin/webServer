@@ -37,3 +37,8 @@ sudo systemctl start mysql
 CREATE DATABASE databasename;
 USE databasename;
 ```
+
+- charger un fichier sql
+```sql
+SOURCE myFile.sql;
+```
