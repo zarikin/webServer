@@ -5,6 +5,7 @@
 sudo apt install -y apache2
 sudo apt-get install -y php libapache2-mod-php
 sudo apt install -y php-mysql
+sudo apt install php-common php-cli php-bz2 php-curl php-gd php-intl php-json php-readline php-xml php-zip php-fpm php-bcmath php-mbstring
 service apache2 start
 cd /var/www
 sudo chmod 777 -R *
