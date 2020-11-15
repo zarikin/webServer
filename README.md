@@ -40,10 +40,13 @@ echo "<img src='test.png'/>"; //to display image
 
 ### changer de version php
 ```
+sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 sudo apt install php7.3
 sudo a2dismod php7.2
 sudo a2enmod php7.3
+sudo apt-get install -y php libapache2-mod-php
+sudo apt install -y php-mysql
 sudo apt install php7.3-common php7.3-cli php7.3-bz2 php7.3-curl php7.3-gd php7.3-intl php7.3-json php7.3-readline php7.3-xml php7.3-zip php7.3-fpm php7.3-bcmath php7.3-mbstring
 sudo service apache2 restart
 ```
